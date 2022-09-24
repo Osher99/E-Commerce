@@ -1,38 +1,36 @@
-.App {
+/* NavBar */
+.navbar-nav-a {
+  font-size: 18px;
+}
+
+.sticky-header {
+  position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.card {
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search {
+  border: 2px solid black;
+  border-radius: 50px;
+  background-color: transparent;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  color: black;
   text-align: center;
+  margin-top: 5px;
+  margin-left: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-backdrop.show {
+  position: inherit!important;
 }
